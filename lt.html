@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	
+
+	<!---Fill Code Here-->
+	<body>
+            Please input a number.
+            <br>
+        <input type="text" name="Occupation" id="demo" value=""><span><button onclick="check()">Click Me!</button><span>
+		<p id="result"><p>
+        <script>
+			function	check(){
+                d=document.getElementById("demo").value;
+                if( typeof d=="string")
+                {
+                    if(!isNaN(d))
+					{ console.log("Yes");
+                       document.getElementById("result").innerHTML="Numeric";
+					}
+					   else
+					   {
+						console.log("No");
+                       document.getElementById("result").innerHTML=" Not Numeric";   
+                }
+			}
+            }
+		</script>
+
+		</body>
+
+</html>
+

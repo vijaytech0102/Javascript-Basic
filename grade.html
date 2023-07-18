@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Grade Of the Student</h1>
+    <button onclick="grade()">Check Grade</button>
+    <h2 id="grade"></h2>
+    <script>
+        function grade(){
+            let g= prompt("Enter the Marks");
+            if(g<=100 && g>=90)
+            {
+                document.getElementById("grade").innerHTML="Grade-A for "+g;
+            }
+            else if( g<90 && g>=80){
+                document.getElementById("grade").innerHTML="Grade-B for "+g;
+            }
+            else if( g<80 && g>=70){ 
+                document.getElementById("grade").innerHTML="Grade-C for "+g;
+            }
+            else if( g<70 && g>=60){
+                document.getElementById("grade").innerHTML="Grade-D for "+g;
+            }
+            else if( g<60 && g>=50){
+                document.getElementById("grade").innerHTML="Grade-E for "+g;
+            }
+            else{
+                document.getElementById("grade").innerHTML="Fail Attempt Again..!!"+g;
+            }
+        }
+    </script>
+</body>
+</html>
+<!--100<= to 90>=  grade A 
+    90< to >= 80 grade B
+    80< to >= 70 grade c
+    70< to >= 60 grade D
+    60< to >= 50 grade E
+    50< to  grade F
+
+
+-->

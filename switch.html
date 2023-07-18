@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Name of Days</h1>
+    <button onclick="grade()">Enter Day NUmber</button>
+    <h2 id="grade"></h2>
+    <script>
+        function grade(){
+            let g= prompt("Enter the Day Number");
+            switch(g){
+                case '1': 
+                        document.getElementById("grade").innerHTML="Monday";
+                        break;
+                case '2': 
+                        document.getElementById("grade").innerHTML="Tuesday";
+                        break;
+                case '3': 
+                        document.getElementById("grade").innerHTML="Wednesday";
+                        break;
+                case '4': 
+                        document.getElementById("grade").innerHTML="Thurshday";
+                        break;
+                case '5': 
+                        document.getElementById("grade").innerHTML="Friday";
+                        break;
+                case '6': 
+                        document.getElementById("grade").innerHTML="Saturday";
+                        break;
+                case '7': 
+                        document.getElementById("grade").innerHTML="Sunday";
+                        break;
+                default:document.getElementById("grade").innerHTML="Wrong Input";
+            }
+            
+        }
+    </script>
+</body>
+</html>
+<!--100<= to 90>=  grade A 
+    90< to >= 80 grade B
+    80< to >= 70 grade c
+    70< to >= 60 grade D
+    60< to >= 50 grade E
+    50< to  grade F
+
+
+-->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h"></h1>
+    <p id="hello"></p>
+    <div id="main">
+        <p>Hello world</p>
+        <p>Welcome to Javascript programming</p>
+    </div>
+    <h3 id="demo"></h3>
+
+    <p class="d1">Html</p>
+    <p class="d1">CSS</p>
+    <p class="d1">Ajax</p>
+    <h4 id="h4"></h4>
+
+    <script>
+    
+        document.getElementById("h").innerHTML="Javascript";
+        document.getElementById("hello").innerHTML="Welcome to Dom Manipulation";
+        const a=document.getElementById("main");
+        console.log(a);
+        const b=a.getElementsByTagName("p");
+        console.log(b);
+        document.getElementById("demo").innerHTML=b[1].innerHTML;
+        const x=document.getElementsByClassName("d1");
+        console.log(x);
+        document.getElementById("h4").innerHTML=x[0].innerHTML+x[1].innerHTML+x[2].innerHTML;
+    </script>
+</body>
+</html>

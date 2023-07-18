@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="temp"></h1>
+    <script>
+        function toCelsius(fahrenheit){
+            let c=(5/9)*(fahrenheit-32);
+            return c
+        }
+        f=prompt("Enter the fahrenheit:")
+        let k=toCelsius(f)
+        document.getElementById("temp").innerHTML="Temperature in Celcius "+k;        
+    </script>
+</body>
+</html>
+// What is function--> Function-->> fun + Action
+// Function--> It is the named part of the program which perform some task or action.
+Types of Funtions-->
+1. Function with no arguement with no return type.
+2. Function with arguement with no return type.
+3. Function with argument and with return type.

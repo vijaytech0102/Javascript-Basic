@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="d"></h2>
+    <label for="cl">Number 1</label>
+    <input type="number" name="" id="cl">
+    <label for="cd"> Number 2</label>
+    <input type="number" name="" id="cd">
+    <label for="ch"> Choice</label>
+    <button onclick="calculator()">Result</button>
+    <h3 id="result"></h3>
+    <script>
+        
+        function calculator(){ 
+        var a=document.getElementById("cl").value;
+        var b=document.getElementById("cd").value;
+        a=parseInt(a);
+        b=parseInt(b);
+        do{
+            var x="1.Add"+"<br>"+"2.Mul"+"<br>"+"3.Div";
+            var ch=prompt("Enter the choice");
+            
+            console.log(a);
+            console.log(b);
+            if(ch==1){
+                var sum=a+b
+                document.getElementById("result").innerHTML=sum;        
+            }            
+            if(ch==2){
+                var mul=a*b
+                document.getElementById("result").innerHTML=mul;
+            }            
+            if(ch==3){
+                var div=a/b;
+                document.getElementById("result").innerHTML=div;
+            }            
+            if(ch==0)
+            {
+                break;
+            }
+        }while(false);
+    
+    }
+    </script>
+</body>
+</html>

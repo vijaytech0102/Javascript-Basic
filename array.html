@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        let a=[1,2,3,4,5,6,7,8,9]
+        a.pop();
+        console.log(a);
+        let b="";
+        let c=["heloo", "jii","Namaste"];
+        c.pop();
+        console.log(c);
+        for(let i=0; i<a.length; i++){
+            b+=a[i]+"<br>"
+        }
+        var p= "volov"+16+2;
+        console.log(p);
+        document.getElementById("demo").innerHTML=b;
+    </script>
+</body>
+</html>

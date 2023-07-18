@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table Of Number</h1>
+    <h2 id="table"></h2>
+    <script>
+        let str="";
+        const num=prompt('Enter the Number');
+        for(let i=1; i<=10; i++){
+            str+=num+"*"+i+"="+num*i+"<br>";
+        }
+        document.getElementById("table").innerHTML=str;
+    </script>
+</body>
+</html>

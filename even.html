@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Web Development</h1>
+    <ul>
+        <li id="list"></li>
+        <li id="list1"></li>
+        <li id="list2"></li>
+        <li id="list3"></li>
+    </ul>
+    <script>
+        const array=["html", "css", "javascript","react"];
+        document.getElementById("list").innerHTML=array[0];
+        document.getElementById("list1").innerHTML=array[1];
+        document.getElementById("list2").innerHTML=array[2];
+        document.getElementById("list3").innerHTML=array[3];
+    </script> -->
+
+    <H2>Web Development</H2>
+    <ul>
+        <li id="h"></li>
+    </ul>
+    <ul>
+        <li id="odd"></li>
+    </ul>
+    <script>
+        let text=" "
+       for(let i=1; i<=100; i++)
+       {
+        if(i%2==0)
+        {
+            text+=i+"<br>";
+        }
+       }
+        let txt=" "
+       for(let i=1; i<=100; i++)
+       {
+        if(i%2!=0)
+        {
+            txt+=i+"<br>";
+        }
+       }
+        document.getElementById("h").innerHTML=text;
+        document.getElementById("odd").innerHTML=txt;
+    
+
+    </script>
+    <h2 id="prime"></h2>
+</body>
+</html>

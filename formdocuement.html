@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f" action="">
+        Name:<input type="text" name="" id="" value="Rahul"><br>
+        Last Name:<input type="text" name="" id="" value="singh"><br>
+        Address:<input type="text" name="" id="" value="Delhi"><br>
+        Mobile:<input type="text" name="" id="" value="9336676262"><br>
+        <input type="submit" name="" id="" >
+    </form>
+    <p id="demo"></p>
+    <script>
+        const x=document.forms["f"];
+        console.log(x);
+        let text="";
+        for(let i=0; i<x.length; i++)
+        {
+            text=text+x.elements[i].value+"<br>";
+        }
+        console.log(text);
+        document.getElementById("demo").innerHTML=text;
+
+    </script>
+</body>
+</html>

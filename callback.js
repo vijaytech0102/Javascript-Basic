@@ -47,3 +47,19 @@
 const postive=removeNeg(num, (x)=> x>=0);
 console.log(postive);
 
+
+function print(message, callback){
+    setTimeout( function(){
+        console.log(message,"hello world settimeout");
+        callback;
+    },3000);
+    
+}
+ function getMessage()
+{   setTimeout(function(){
+    console.log("Hello callback function");
+
+},1000);
+}
+
+print("hii",getMessage());

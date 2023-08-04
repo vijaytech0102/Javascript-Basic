@@ -18,6 +18,7 @@
     <p class="d1">CSS</p>
     <p class="d1">Ajax</p>
     <h4 id="h4"></h4>
+    <h5 id="h5"></h5>
 
     <script>
     
@@ -31,6 +32,9 @@
         const x=document.getElementsByClassName("d1");
         console.log(x);
         document.getElementById("h4").innerHTML=x[0].innerHTML+x[1].innerHTML+x[2].innerHTML;
+        const d=document.querySelectorAll("p.d1");
+        document.getElementById("h5").innerHTML=d[0].innerHTML+"<br>"+d[1].innerHTML+"<br>"+d[2].innerHTML;
+        console.log(d);
     </script>
 </body>
 </html>

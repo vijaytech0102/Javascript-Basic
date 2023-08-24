@@ -25,3 +25,6 @@ console.log(p);
 
 let j=document.getElementsByClassName("para1");
 j[0].innerHTML=p[0].innerHTML+" classname to classname";
+
+
+// queryselector

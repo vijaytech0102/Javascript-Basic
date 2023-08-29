@@ -39,3 +39,4 @@ Add(a,b);
 function display(some){
     document.getElementById("demo").innerHTML=some;
 }
+
